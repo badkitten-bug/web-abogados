@@ -75,7 +75,10 @@ const DashboardLayout = () => {
   } else if (user?.rol === 'asistente') {
     menuItems.push(
       { text: 'Casos', icon: <GavelIcon />, path: '/dashboard/casos' },
-      { text: 'Citas', icon: <EventIcon />, path: '/dashboard/citas' }
+      { text: 'Citas', icon: <EventIcon />, path: '/dashboard/citas' },
+      { text: 'Clientes', icon: <PersonIcon />, path: '/dashboard/clientes' },
+            { text: 'Documentos', icon: <DescriptionIcon />, path: '/dashboard/documentos' }
+
     );
   } else if (user?.rol === 'abogado') {
     menuItems.push(
