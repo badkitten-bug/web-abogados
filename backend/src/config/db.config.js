@@ -3,13 +3,8 @@ require('dotenv').config();
 
 const sequelize = new Sequelize('jyang', 'root', 'root', {
   host: 'localhost',
-  dialect: 'mysql',
+  dialect: 'mariadb',
   logging: false,
-  dialectOptions: {
-    authPlugins: {
-      mysql_native_password: () => () => Buffer.from([0])
-    }
-  }
 });
 
 const testConnection = async () => {

@@ -1,7 +1,7 @@
 <?php
 $host = "localhost"; // Cambia si tu base de datos está en otro servidor
 $usuario = "root"; // Tu usuario de MySQL
-$clave = "root"; // Tu contraseña de MySQL
+$clave = ""; // Tu contraseña de MySQL
 $base_datos = "jyang"; // Cambia por el nombre de tu base de datos
 
 // Crear conexión

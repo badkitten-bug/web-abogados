@@ -31,6 +31,7 @@
 
   <!--=====JQUERY=======-->
   <script src="assets/js/jquery-3-6-0.min.js"></script>
+  <script src="assets/js/form-handler.js"></script>
 </head>
 
 <body class="body3">
@@ -87,7 +88,7 @@
                 <div class="button2-all">
                   <a href="https://wa.me/51925756263" class="hero3-number-btn" target="_blank"><span><i
                         class="fa-regular fa-phone"></i></span> +51 925 756 263</a>
-                  <a href="jyang-system/index.php" class="theme-btn5 font-f-7">Iniciar Sesión</a>
+                  <a href="http://localhost:5173/login" class="theme-btn5 font-f-7">Iniciar Sesión</a>
                 </div>
               </div>
               <div class="mobile-menu-bar d-lg-none">
@@ -1107,11 +1108,11 @@
           <div class="col-lg-6">
             <div class="contact5-form aos-init aos-animate" data-aos="zoom-out-up" data-aos-duration="800">
               <div class="headding">
-                <h5>Envíanos un Mensaje</h5>
+                <h5>Envíanos un mensaje</h5>
                 <p>El tiempo de respuesta es dentro de los 30 minutos durante el horario laboral</p>
               </div>
 
-              <form action="#" method="POST" id="contact-form">
+              <form id="contact-form" method="POST">
                 <div class="form-inputs">
                   <div class="row">
                     <div class="col-lg-6">
@@ -1138,14 +1139,16 @@
                     <div class="space20"></div>
                     <div class="row">
                       <div class="col-12 text-center">
-                        <div class="aos-init aos-animate" data-aos="fade-up" data-aos-duration="700">
+                        <div class="" data-aos="fade-up" data-aos-duration="700">
                           <button type="submit" class="theme-btn5">Enviar mensaje</button>
                         </div>
+                        <div id="form-message" class="mt-3" style="display: none;"></div>
                       </div>
                     </div>
                   </div>
                 </div>
               </form>
+              </script>
             </div>
           </div>
         </div>
